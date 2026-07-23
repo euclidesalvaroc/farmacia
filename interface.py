@@ -1,25 +1,6 @@
-"""
-Farmácia — Sistema de Faturação B2B (interface Tkinter)
-
-Interface gráfica sobre a mesma lógica do Faturamento.py original
-(catálogo de produtos, carrinho e emissão de fatura), agora com
-janelas, tabelas e botões em vez de input()/print() no terminal.
-
-Executar:
-    python faturamento_gui.py
-
-Não precisa de nenhuma biblioteca externa — o tkinter já vem
-incluído no Python (no Linux, se faltar, instala com
-`sudo apt install python3-tk`).
-"""
-
 import tkinter as tk
 from tkinter import ttk, messagebox
 from datetime import datetime
-
-# ---------------------------------------------------------------------------
-# Dados
-# ---------------------------------------------------------------------------
 
 PRODUTOS = {
     "1": {"nome": "Paracetamol", "preco": 500},
@@ -28,11 +9,7 @@ PRODUTOS = {
     "4": {"nome": "Ibuprofeno", "preco": 650},
 }
 
-# Paleta pensada com psicologia das cores:
-#   azul   -> confiança / acção principal (farmácia, saúde)
-#   verde  -> confirmação, dinheiro, sucesso (emitir / total)
-#   vermelho -> remover / cancelar (acção destrutiva)
-#   cinza  -> neutro / informação de fundo
+
 COR_AZUL = "#1e40af"
 COR_VERDE = "#059669"
 COR_VERMELHO = "#dc2626"
